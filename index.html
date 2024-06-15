@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BMI Calculator</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>BMI Calculator</h1>
+            <input type="text" autocomplete="off" name="text" class="input" id="weight" placeholder="Weight in kg">
+            <input type="text" autocomplete="off" name="text" class="input" id="height" placeholder="Height in cm">
+            <button onclick="calculate()" class="button"><span class="button_top">Calculate BMI</span></button>
+            <h2 id="result"></h2>
+            <br>
+            <p>Convert pounds to kg.</p>
+            <input type="text" autocomplete="off" name="text" class="input" id="pds" placeholder="Pounds">
+            <button onclick="pds()" class="button"><span class="button_top">Convert</span></button>
+            <h2 id="result in pds"></h2>
+            <br>
+            <p>Convert feet + inch to cm.</p>
+            <input type="text" autocomplete="off" name="text" class="input" id="feet" placeholder="Feet">
+            <p>+</p>
+            <input type="text" autocomplete="off" name="text" class="input" id="inch" placeholder="Inches">
+            <button onclick="feet()" class="button"><span class="button_top">Convert</span></button>
+            <h2 id="result in feet"></h2>
+            <footer>
+                <p>Developed by Marcus Quitiquit</p>
+            </footer>
+        </div>
+    </body>
+</html>
